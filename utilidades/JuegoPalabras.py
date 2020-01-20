@@ -35,15 +35,14 @@ def compararPalabras(palabraIntroducida,palabraGenerada):
 
 
 def game():
-    acertado = True
+
     palabraAleatorio = palabraAleatoria()
-    
-    while(acertado):
+
+    while(True):
         print("Introduce una palabra de 5 letras")
         palabra = raw_input()
         resultado = compararPalabras(palabra,palabraAleatorio)
-        if(resultado == "Acertaste"):
-            acertado = False
         print(resultado)
+        if(resultado == "Acertaste"):
+            break
 
-game()
