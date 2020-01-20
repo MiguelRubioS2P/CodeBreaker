@@ -40,8 +40,8 @@ def comparar(numero1,numero2):
 
 def game():
     acertado = False
-    # numero = obtenerNumeroAleatorio()
-    numero = "023"
+    numero = obtenerNumeroAleatorio()
+    #numero = "023"
     try:
         pregunta = int(input("Di un numero de tres digitos \n"))
         respuesta = comparar(numero, pregunta)
